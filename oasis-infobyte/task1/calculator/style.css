@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:black;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    display: grid;
+    gap: 10px;
+    width: 200px;
+}
+/* All of the code is done by Vedansh Mishra */
+#display {
+    color: white;
+    grid-column: span 4;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btn.operator {
+    background-color: #f78c40;
+    color: white;
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: #e57373;
+    color: white;
+}
